@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>디미디 카드뉴스 코딩(1) 강서연</title>
+  <style>
+    @font-face {
+      font-family: 'GMarketSans';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+      font-weight: 300;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'GMarketSans';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+      font-weight: 500;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'GMarketSans';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    body {
+      margin: 0;
+      background: lightyellow;
+      font-family: 'GMarketSans', sans-serif;
+      position: relative; /* 스티커 위치 기준 */
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    header {
+      background: lightblue;
+      color: lightyellow;
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 40px 100px;
+      text-align: center;
+      background: lightyellow;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: lightblue;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 12px 0;
+    }
+
+    .highlight {
+      color: lightblue;
+      background-color: grey;
+      display: inline;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+      .sticker {
+      position: absolute;
+      width: 100px;
+      z-index: 10;
+    }
+    .one {
+      top: 50px;
+      left: 50px;
+      transform: rotate(-15deg);
+    }
+    .two {
+      top: 150px;
+      right: 100px;
+      transform: rotate(10deg);
+    }
+    .three {
+      top: 25px;
+      left: 150px;
+    }
+    .sticker {
+  position: absolute;
+  width: 100px;
+  z-index: 10;
+  opacity: 0.75; 
+}
+  </style>
+</head>
+<body>
+
+  <img src="Subject 15.png" alt="스티커 1" class="sticker one" />
+  <img src="Subject 16.png" alt="스티커 2" class="sticker two" />
+  <img src="Subject 17.png" alt="스티커 3" class="sticker three" />
+
+  <header>
+    <h1>"읽씹"보다 더 아픈 건 "안 읽씹"</h1>
+    <p>채팅창은 조용한데, 머릿속은 시끄러워ㅠㅠ</p>
+    <p></p>
+  </header>
+  <p></p>
+
+  <section>
+    <img src="https://i.pinimg.com/736x/65/21/66/652166c0af6f40ee313ff077d7f5d3f0.jpg" width="500" alt="이미지1" />
+    <p>읽고 대답 안 하는 것도 아니고, 아예 안 읽어버리는 건 너무 슬프잖아!</p>
+
+    <img src="https://i.pinimg.com/736x/68/b9/0f/68b90fcb8d0c97ffd0cfb614c14bec98.jpg" width="500" alt="이미지2" />
+    <p>'1시간 전 접속</p>
+    <p>'5분 전에 확인함'</p>
+    <p>아무것도 아닌 채팅창 속 표시들이 나를 괴롭힌다...</p>
+    <h2 class="highlight">우리는 왜 이렇게 읽음 표시에 예민할까?</h2>
+    <p></p>
+
+    <img src="https://i.pinimg.com/736x/e1/42/46/e1424682e3417727e5ed681f8e933de8.jpg" width="500" alt="이미지3" />
+    <p></p>
+    <h2 class="highlight">요즘 관계는 대화보다 기록으로 유지된다</h2>
+    <p>표시 하나, 알림 하나로 좌우되는 감정</p>
+    <p>연결되어 있지만 사실은 너무 불안한 관계</p>
+
+    <img src="https://i.pinimg.com/736x/7f/20/12/7f20120b013e989cfb5a68e792d8071f.jpg" width="500" alt="이미지4" />
+    <p>'답장 오겠지'라는 기대가 깨질 때, 내 감정은 요동친다</p>
+    <h2 class="highlight">&lt;기대와 현실의 불일치에서 오는 불안&gt;</h2>
+    <p></p>
+
+    <img src="https://i.pinimg.com/736x/e9/36/43/e936437e3f19d50d9db457cac8311a68.jpg" width="500" alt="이미지5" />
+    <p>'상대의 반응을 예측 할 수 없음'은 관계의 주도권을 잃었다는 느낌을 만든다</p>
+    <h2 class="highlight">&lt;안읽씹은 단순한 무시를 넘어 무력감의 트리거&gt;</h2>
+    <p></p>
+
+    <img src="https://i.pinimg.com/736x/bd/c6/b4/bdc6b4ef85f2229aa78291d10f57cda9.jpg" width="500" alt="이미지6" />
+    <p>불안형 애착일수록 읽씹, 안읽씹에 더 예민하다</p>
+    <p>상대의 반응으로 내 가치를 확인하려 하기 때문에...</p>
+    <h2 class="highlight">&lt;결국 '나 괜찮은 사람 맞지?'라는 마음의 불안&gt;</h2>
+    <p></p>
+
+    <img src="https://m.health.chosun.com/site/data/img_dir/2023/09/13/2023091300914_0.jpg" width="500" alt="이미지7" />
+    <p>안읽씹의 진짜 이유는?</p>
+    <h2 class="highlight">-답장 할 말이 떠오르지 않아서</h2>
+    <p></p>
+    <h2 class="highlight">-감정을 정리중이라서</h2>
+    <p></p>
+    <h2 class="highlight">-대화가 버거워서</h2>
+    <p></p>
+    <h2 class="highlight">-잠깐의 거리두기가 필요해서</h2>
+    <p></p>
+
+    <img src="https://i.pinimg.com/736x/8a/02/8c/8a028c8de57ea3ce9916a452eb533a6a.jpg" width="500" alt="이미지8" />
+    <p></p>
+    <h2 class="highlight">관계 피로의 시대</h2>
+    <p>24시간 연결된 세상,</p>
+    <p>즉각적인 반응이 성의가 된 시대</p>
+    <p>그래서 우린 점점 대화 대신 침묵으로 숨을 고른다...</p>
+
+    <img src="https://i.pinimg.com/736x/f1/0a/01/f10a01315de22cbc43a9a94529f05fea.jpg" width="500" alt="이미지9" />
+    <p>상대방의 반응이 느린 게 아니라, 내가 너무 빨리 확인하려 한 걸 지도 모른다!</p>
+    <h2 class="highlight">'기다림'도 관계의 일부일 수 있다!</h2>
+    <p></p>
+
+    <img src="https://i.pinimg.com/1200x/24/3d/64/243d649ba6b0064ab3e1015baec1a6c0.jpg" width="500" alt="이미지10" />
+    <p>읽씹이든 안읽씹이든 중요한 건 대화의 속도가 아니라 관계의 깊이!</p>
+    <h2 class="highlight">상대의 반응보다는 내 마음을 다정하게 돌보는 연습이 필요하다</h2>
+  </section>
+
+</body>
+</html>
+
